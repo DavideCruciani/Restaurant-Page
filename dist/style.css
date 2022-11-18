@@ -1,0 +1,128 @@
+:root {
+  --green1: #05ce7c;
+  --green2: #05955d;
+  --green3: #9bc262;
+  --purple1: #a162bb;
+}
+
+::selection {
+  background: var(--green3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-image: url(frog-wallpaper.png);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  background-color: var(--green2);
+  height: 25vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 1px 5px black;
+}
+
+h1 {
+  font-size: 90px;
+  font-family: 'Titan One', cursive;
+  color: var(--purple1);
+  text-shadow: 0px 3px 5px black;
+  margin-bottom: 25px;
+}
+
+nav {
+  width: 100vw;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+.navigation-buttons {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--green3);
+  text-shadow: 0px 0px 3px black;
+  cursor: pointer;
+}
+
+.navigation-buttons:hover {
+  color: var(--purple1);
+}
+
+main {
+  max-width: 700px;
+  padding: 4rem;
+  background-color: rgba(5, 206, 124, 0.9);
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+#coffee {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+footer {
+  width: 100vw;
+  height: 5vh;
+  background-color: rgba(5, 149, 93, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px -1px 5px black;
+}
+
+#author {
+  color: var(--green3);
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0px 0px 3px black;
+}
+
+#davide:hover {
+color: var(--purple1);
+cursor: grab;
+}
+
+#davide:active {
+  color: var(--purple1);
+  cursor: grabbing;
+  }
