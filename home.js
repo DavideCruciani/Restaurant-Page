@@ -16,25 +16,26 @@ function headerContent() {
   const li1 = ul.appendChild(document.createElement('li'));
   const a1 = li1.appendChild(document.createElement('a'));
   a1.classList.add("navigation-buttons")
+  a1.setAttribute("id", "homeBtn")
   a1.textContent = "Home"
 
   const li2 = ul.appendChild(document.createElement('li'));
   const a2 = li2.appendChild(document.createElement('a'));
   a2.classList.add("navigation-buttons")
+  a2.setAttribute("id", "menuBtn")
   a2.textContent = "Menu"
 
   const li3 = ul.appendChild(document.createElement('li'));
   const a3 = li3.appendChild(document.createElement('a'));
   a3.classList.add("navigation-buttons")
+  a3.setAttribute("id", "contactBtn")
   a3.textContent = "Contact"
 
 }
 
-
-
 function homeContent() {
   
-  const main = content.appendChild(document.createElement('main'));
+  const main = document.querySelector('main')
 
   const div = main.appendChild(document.createElement('div'));
   div.classList.add("home");
