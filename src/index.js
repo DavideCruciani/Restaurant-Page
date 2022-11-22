@@ -1,1 +1,5 @@
-console.log('TEST TEST TEST')
+import { headerContent, homeContent , footerContent } from "../home"
+
+headerContent()
+homeContent()
+footerContent()
