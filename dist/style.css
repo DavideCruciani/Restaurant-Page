@@ -2,13 +2,14 @@
   --green1: #05ce7c;
   --green2: #05955d;
   --green3: #9bc262;
+  --green4: #8ddaa6;
   --brown1: #9E7676;
   --beige1: #E9DAC4;
   --brown2: #594545;
 }
 
 ::selection {
-  background: var(--green3);
+  background: var(--green4);
 }
 
 * {
@@ -18,7 +19,7 @@
 }
 
 body {
-  background-image: url(frog-wallpaper.png);
+  background-image: url(frogmint.png);
 }
 
 #content {
@@ -43,9 +44,19 @@ header {
 h1 {
   font-size: 90px;
   font-family: 'Titan One', cursive;
-  color: var(--green3);
+  color: var(--beige1);
   text-shadow: 0px 0px 5px black;
   margin-bottom: 25px;
+}
+
+h1:hover {
+  color: var(--green4);
+  cursor: grab;
+  scale: 1.1;
+}
+
+h1:active {
+  cursor: grabbing;
 }
 
 nav {
@@ -70,7 +81,7 @@ li {
 }
 
 .navigation-buttons:hover {
-  color: var(--green3);
+  color: var(--green4);
 }
 
 main {
